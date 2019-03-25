@@ -9,9 +9,9 @@
 /coverage
 
 # production
-/build
-.idea/
-
+build/
+node_modules/
+idea/
 
 # misc
 .DS_Store
