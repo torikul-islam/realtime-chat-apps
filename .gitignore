@@ -9,9 +9,12 @@
 /coverage
 
 # production
-/build
-.idea/
-
+/backend/build/
+/chat-app/build/
+/backend/node_modules/
+/chat-app/node_modules/
+/backend/idea/
+/chat-app/idea/
 
 # misc
 .DS_Store
