@@ -10,7 +10,6 @@
 
 # production
 /build
-backend/node_modules/
 .idea/
 
 # misc
