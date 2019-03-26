@@ -24,11 +24,10 @@ io.on("connection", (socket)=>{
 
 const messageSchema = new mongoose.Schema({
     name: String,
-    message: String
+    message: String, 
 });
 
 const Message = mongoose.model("message", messageSchema);
-
 
 app.use(cors());
 app.use(express.json());
@@ -43,7 +42,7 @@ app.get("/", async (req, res) => {
 app.post("/", async (req, res) => {
     const messageObj = new Message({
         name: req.body.name,
-        message: req.body.message
+        message: req.body.message,
     });
 
     await messageObj.save();
